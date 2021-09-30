@@ -92,7 +92,7 @@ export class TodoDataLayer {
     const signedUrl = await this.s3.getSignedUrl('putObject', {
       Bucket: this.imageBucketName,
       Key: todoItemDTO.todoId,
-      Expires: this.signedUrlExpiration
+      Expires: +this.signedUrlExpiration
     })
 
     const param = {

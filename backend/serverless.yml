@@ -47,7 +47,7 @@ functions:
           cors: true
           authorizer: Auth
           request:
-            schema:
+            schemas:
               application/json: ${file(src/models/create-todo-request.json)}
 
   UpdateTodo:

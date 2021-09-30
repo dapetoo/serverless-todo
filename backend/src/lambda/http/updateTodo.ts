@@ -13,7 +13,8 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
     },
     body: JSON.stringify({
       message
-    })
+    }),
+    "isBase64Encoded": false
 
   }
 
